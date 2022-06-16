@@ -1,0 +1,57 @@
+.logReg {
+  margin-left: 45%;
+  background-color: blue;
+  color: white;
+  padding: 4px 40px;
+  border-radius: 80px;
+  gap: 180px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .home {background-color: rgb(242, 159, 234);
+
+} */
+.homee {
+  margin-left: 45%;
+}
+
+.headlines {
+  margin-left: 25%;
+}
+
+.p {
+  margin: 20%;
+}
+
+img {
+  margin-left: 45%;
+  width: 9%;
+  align-items: center;
+}
+
+.form-content-login {
+  border: 1px solid black;
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.login {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Image {
+  background-image: -moz-element();
+}
+
+.Imagehome {
+  margin-left: 40%;
+  width: 18%;
+}

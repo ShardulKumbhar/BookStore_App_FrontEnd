@@ -1,0 +1,14 @@
+#footer {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    background-color: #934046;
+    margin-top: 10%;
+    align-items: center;
+  }
+  #footer-font {
+    font-size: 13px;
+    margin: 3px;
+    padding: 8px;
+    text-align: center;
+  }

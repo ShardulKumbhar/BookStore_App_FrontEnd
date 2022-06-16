@@ -1,0 +1,46 @@
+.form-content-login {
+  border: 1px solid black;
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.Imagelogin {
+  margin-left: 28%;
+  width: 40%;
+}
+.login {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#forgot-link{
+  padding-left: 18%;
+  color: red;
+}
+.home-headlogo{
+  padding-left: 75%;
+
+  
+}
+.home-imglogo{
+  height: 5%;
+}
+
+#home-link{
+  color: green;
+}
+.link {
+  margin-bottom: 20px;
+}
+
+.row-content-login {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-login {
+  width: 80%;
+}
