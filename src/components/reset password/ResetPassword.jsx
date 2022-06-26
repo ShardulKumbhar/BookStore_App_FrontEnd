@@ -30,12 +30,14 @@ export default function ResetPassword() {
       passwordDetails.confirmPassword
     )
       .then((response) => {
+        // console.log(response.data.message)
         alert(response.data.message);
         SetPasswordDetails({
           ...passwordDetails,
           newPassword: "",
           confirmPassword: "",
           token: "",
+        
         });
       })
       .catch((error) => {

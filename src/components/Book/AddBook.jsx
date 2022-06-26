@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -48,34 +47,30 @@ export default function AddBook(props) {
     let token = localStorage.getItem("token");
     console.log(token);
     BookService.addBook(book)
-    .then((response)=>{
-      console.log(response)
-      setsnackBar({
-        ...snackBar,
-        snackFlag: true,
-        snackMessage: response.data.message,
-        severity: "success",
-        
-        
+      .then((response) => {
+        console.log(response);
+        setsnackBar({
+          ...snackBar,
+          snackFlag: true,
+          snackMessage: response.data.message,
+          severity: "success",
+        });
+        alert(response.data.message);
+        props.history.push({
+          pathname: "/libarary",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        setsnackBar({
+          ...snackBar,
+          snackFlag: true,
+
+          snackMessage: error.response.data.message,
+          severity: "error",
+        });
+        alert(error.response.data.message);
       });
-      alert(response.data.message)
-      props.history.push({
-        pathname: "/libarary",
-      });
-      
-    })
-    .catch((error)=>{
-      console.log(error);
-      setsnackBar({
-        ...snackBar,
-        snackFlag: true,
-        
-        
-        snackMessage: error.response.data.message,
-        severity: "error",
-      });
-      alert(error.response.data.message)
-    });
   };
 
   const handleBookInput = (e) => {
@@ -106,15 +101,15 @@ export default function AddBook(props) {
   return (
     <div className="container-addbook">
       <header className="header-content header">
-          <div className="logo-content">
-            <img
-              src={book}
-              alt="logo-content"
-              className="logo-content-img"
-              width=""
-            />
-          </div>
-        </header>
+        <div className="logo-content">
+          <img
+            src={book}
+            alt="logo-content"
+            className="logo-content-img"
+            width=""
+          />
+        </div>
+      </header>
 
       <div className="form-content">
         <form
@@ -237,15 +232,19 @@ export default function AddBook(props) {
             </Button>
           </div>
           <div>
-      <Link to="/libarary" className="link">
+            <Link to="/libarary" className="link">
               <button>Check BookStore</button>
             </Link>
-      </div>
+          </div>
         </form>
       </div>
-      {snackBar.snackFlag && 
-        <DirectionSnackbar message={snackBar.snackMessage} severity={snackBar.severity} flag={snackBar.snackFlag}  />
-      }
+      {snackBar.snackFlag && (
+        <DirectionSnackbar
+          message={snackBar.snackMessage}
+          severity={snackBar.severity}
+          flag={snackBar.snackFlag}
+        />
+      )}
     </div>
   );
 }

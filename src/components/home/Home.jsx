@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import book from "../../assets/icons/Group 5.svg";
-import bookstore from "../../assets/icons/icons8-bookstore-64.png";
+import video from "../../assets/video/bookvideo.mp4";
 
 export default function Home() {
   return (
@@ -24,9 +24,16 @@ export default function Home() {
             Please sign in to see our catalog.
           </p>
         </div>
+
+        {/* <div className="home-video-spam">
+        <video width="750" height="500" controls >
+      <source src={video} type="video/mp4"/>
+      </video>
+      </div> */}
+
         <div className="homeimg">
           <img
-            src="https://cdn.pixabay.com/photo/2016/09/16/09/20/books-1673578_960_720.png"
+            src="https://us.123rf.com/450wm/sergeypykhonin/sergeypykhonin1809/sergeypykhonin180900041/108230283-registration-register-logo-or-label-diary-note-icon-vector-illustration.jpg?ver=6"
             className="Imagehome"
             alt=""
             srcset=""

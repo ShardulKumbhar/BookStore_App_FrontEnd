@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Alert from "@mui/material/Alert";
-import user from "../../assets/icons/icons8-user-50.png";
 
 export default function Login(props) {
   const [success, setSuccess] = useState("");
@@ -41,7 +40,6 @@ export default function Login(props) {
         props.history.push({
           pathname: "/libarary",
         });
-
       })
       .catch((error) => {
         alert(error.response.data.data);
@@ -59,15 +57,19 @@ export default function Login(props) {
             width=""
           />
           <div className="home-headlogo">
-     
-           <img src="https://www.freepnglogos.com/uploads/logo-home-png/home-start-blue-logo-icon-0.png" alt="" srcset="" className="home-imglogo" />
-       
-           </div>
+            <Link to="/Home" className="link" id="home-link">
+              <img
+                src="https://www.freepnglogos.com/uploads/logo-home-png/home-start-blue-logo-icon-0.png"
+                alt=""
+                srcset=""
+                className="home-imglogo"
+              />
+            </Link>
+          </div>
         </div>
       </header>
 
       <div className="form-content-login">
-
         {success && (
           <Alert
             onClose={() => {
@@ -135,13 +137,15 @@ export default function Login(props) {
             </Button>
           </div>
           <div className="row-content-login">
-            <Link to="/Home" className="link" id="home-link">
-              Click Here to go Home
+            <Link to="/forgotPassword" className="link" id="forgot-link">
+            forgot Password?
             </Link>
             <br />
+
+            {/* Don't have an account? Sign Up */}
             <br />
-            <Link className="link" to="/forgotPassword" id="forgot-link">
-             forgot Password?
+            <Link className="link" to="signUp" id="home-link">
+            Register for Bookstore
             </Link>
           </div>
         </form>

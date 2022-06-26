@@ -1,0 +1,95 @@
+.logo-content-home {
+  border: 1px solid black;
+  background: #a03037 0% 0% no-repeat padding-box;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo-content-home-links {
+  margin-right: 20px;
+
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartlogos{
+  margin-left: 70%;
+}
+.books__count{
+  border-color: #f6ff42;
+  border-radius: 20%;
+}
+.search-bar{
+  padding-left: 20%;
+}
+.home__select{
+  width: 15rem;
+}
+.book_count_sort_header{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  font-style: italic;
+  font-style: bold;
+}
+
+.addbook-button{
+  /* border: 15ch;
+  padding: 5%;
+  padding-left: 8%;
+  border: 4px solid black;
+  background: #f6ff42 0% 0% no-repeat padding-box; */
+  
+}
+
+.login-link {
+  color: white;
+}
+
+.signUp-link {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+.link-book{
+  padding: 50%;
+}
+
+.cart-image{
+  padding-left: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.addbook-button{
+  margin-left: 200px;
+  padding: 2px;
+  padding-top: 4%;
+  border: 1px solid rgb(0, 0, 0);
+  background:#ffc800 0% 0% no-repeat padding-box;
+  height: 60px;
+  width: 80px;
+ text-decoration: solid;
+}
+.home-imglogooo{
+  padding-top: 50%;
+ 
+width: 40px;
+}
+/* .logoutimg{
+  width: 15px;
+  height: 50px;
+} */

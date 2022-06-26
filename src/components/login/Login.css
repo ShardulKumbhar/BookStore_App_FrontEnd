@@ -13,22 +13,22 @@
 .login {
   width: 80%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
-#forgot-link{
-  padding-left: 18%;
+#forgot-link {
+  padding-left:1%;
   color: red;
 }
-.home-headlogo{
+.home-headlogo {
   padding-left: 75%;
-
-  
 }
-.home-imglogo{
-  height: 5%;
+.home-imglogo {
+  height: 20%;
+  width: 17%;
 }
 
-#home-link{
+#home-link {
+  padding-left: 70px;
   color: green;
 }
 .link {
@@ -36,11 +36,33 @@
 }
 
 .row-content-login {
-  margin-top: 22px;
+  margin-top: 1px;
   display: flex;
   justify-content: center;
+  padding: 5px;
 }
 
 .input-login {
   width: 80%;
+}
+
+
+.search{
+  background-image: url('https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/search.png');
+  background-position: center;
+  background-size: 4%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: white;
+  width: 35rem;
+  height: 2rem;
+  border-radius: 10px;
+  padding-left: 3rem;
+  font-size: medium;
+ 
+}
+
+.cart-image{
+  width: 25px;
+  margin-right: 20px;
 }

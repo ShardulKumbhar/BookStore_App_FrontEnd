@@ -21,10 +21,15 @@ a {
 
 .headlines {
   margin-left: 25%;
+  color: rgb(0, 38, 255);
+  text-decoration-color: brown;
+  text-decoration: dotted;
 }
 
-.p {
-  margin: 20%;
+.home-video-spam{
+  display: grid;
+  padding-left: 45%;
+
 }
 
 img {
@@ -43,15 +48,34 @@ img {
 
 .login {
   width: 80%;
-  padding: 10px;
+  padding: 50px;
   margin-bottom: 10px;
 }
 
 .Image {
+  
   background-image: -moz-element();
 }
+
+
+
 
 .Imagehome {
   margin-left: 40%;
   width: 18%;
 }
+.fotter-txt{
+ padding-left: 33%;
+}
+
+.Newregister{
+
+  width: 100%;
+  display: flex;
+
+}
+/* .Imagehome{
+width: 45px;
+height: 45px;
+} */
+

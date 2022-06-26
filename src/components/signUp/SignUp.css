@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.warning{
+  padding-left: 90px;
+  padding-top: 25px;
+}
 .logo-content-img {
   margin-left: 30px;
   align-content: center;
@@ -25,6 +29,11 @@
   margin: 0 auto;
   margin-top: 50px;
 }
+
+.login-link link{
+  padding-left: 10%;
+}
+
 
 .form-head {
   background: #49ca5a 0% 0% no-repeat padding-box;

@@ -1,20 +1,24 @@
-import React, { Component } from "react";
+import React from 'react'
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import "./FooterBar.css";
 
-export default class FooterBar extends Component {
-  render() {
+
+function Footer() {
+   
     return (
-      <div>
-        <div>
-          <div id="footer">
-            <p id="footer-font">
-              {" "}
-              &copy; Copyright 2021, The Online Book Store Pvt Ltd. <br />
-              All Rights Reserved
-            </p>
-          </div>
-        </div>
+        <div className="footerbar">
+        <AppBar position="center" className="footersss">
+          <Toolbar>
+            <Typography className="fotter-txt">
+              Copyright © 2020, Bookstore Private Limited. All Rights Reserved.
+            </Typography>
+          </Toolbar>
+        </AppBar>
       </div>
-    );
-  }
+    )
 }
+
+export default Footer

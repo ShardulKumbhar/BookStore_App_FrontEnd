@@ -73,6 +73,17 @@ export default function SignUp() {
             className="logo-content-img"
             width=""
           />
+
+          <div className="home-headlogo">
+            <Link to="/Home" className="link" id="home-link">
+              <img
+                src="https://www.freepnglogos.com/uploads/logo-home-png/home-start-blue-logo-icon-0.png"
+                alt=""
+                srcset=""
+                className="home-imglogo"
+              />
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -191,9 +202,13 @@ export default function SignUp() {
               Reset
             </Button>
           </div>
+<div className="warning">
+          <h9 className="warning">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. <br />
+            You may receive Email notifications from us and can opt out at any time</h9>
+            </div>
           <div className="row-content">
-            <Link to="/Home" className="link">
-              Click Here to go Home
+            <Link to="/login" className="link">
+           <b> Already have an account?</b>
             </Link>
           </div>
         </form>
